@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | AdGrowth Local</title>
+    <meta name="description" content="Thank you for reaching out to AdGrowth Local. We will be in touch soon.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+    <!-- PRACTICE SITE BANNER -->
+    <div style="background-color: #ef4444; color: white; text-align: center; padding: 0.5rem; font-weight: bold; font-size: 0.9rem; margin-top: -1rem; margin-bottom: 1rem;">
+        PRACTICE SITE - NOT A REAL BUSINESS
+    </div>
+        <div class="container flex justify-between align-center">
+            <a href="index.html" class="logo">AdGrowth Local</a>
+            <nav>
+                <button class="mobile-menu-btn" aria-label="Toggle Menu">☰</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li class="nav-item-dropdown">
+                        <a href="services.html">Services ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services/google-ads.html">Google Ads Management</a></li>
+                            <li><a href="services/local-service-ads.html">Local Service Ads</a></li>
+                            <li><a href="services/facebook-ads.html">Facebook/Instagram Ads</a></li>
+                            <li><a href="services/conversion-tracking.html">Conversion Tracking</a></li>
+                            <li><a href="services/landing-pages.html">Landing Page Creation</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="case-studies.html">Results</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="tel:555-0199" class="btn btn-primary" style="padding: 0.5rem 1rem;">Call Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="mobile-cta-sticky">
+        <a href="tel:5550199" class="btn btn-primary">Call Now</a>
+        <a href="contact.html" class="btn btn-secondary">Get Quote</a>
+    </div>
+
+    <!-- THANK YOU SECTION -->
+    <section class="section text-center" style="min-height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: var(--color-bg-light);">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <h1 style="color: var(--color-primary); font-size: 2.5rem; margin-bottom: 1rem;">Thank you for reaching out!</h1>
+                <p style="font-size: 1.1rem; color: var(--color-text-light); max-width: 600px; margin: 0 auto 2.5rem;">A specialists will contact you within 24 hours.</p>
+                <a href="index.html" class="btn btn-primary btn-large">Return to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 style="font-size:1.5rem;">AdGrowth Local</h4>
+                    <p>Generating calls, form submissions, and booked appointments for local service businesses.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <div class="footer-links">
+                        <a href="services/google-ads.html">Google Ads</a>
+                        <a href="services/local-service-ads.html">Local Service Ads</a>
+                        <a href="services/facebook-ads.html">Facebook Ads</a>
+                        <a href="services/conversion-tracking.html">Conversion Tracking</a>
+                        <a href="services/landing-pages.html">Landing Pages</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <div class="footer-links">
+                        <a href="about.html">About</a>
+                        <a href="case-studies.html">Results</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <div class="footer-links">
+                        <a href="tel:5550199">📞 (555) 555-0199</a>
+                        <a href="mailto:test@example.com">✉️ test@example.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; <span id="year"></span> AdGrowth Local. All rights reserved. No long-term contracts.
+            </div>
+        </div>    
+        <div style="text-align: center; padding-top: 1rem; padding-bottom: 2rem; font-size: 0.85rem; color: #aaa;">
+            This is a practice website for educational purposes only
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
