@@ -36,4 +36,51 @@ document.addEventListener('DOMContentLoaded', () => {
       header.style.boxShadow = 'var(--box-shadow)';
     }
   });
+
+  // Intersection Observer for Kinetic Typography / Fade Ins
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // If element has a specific animation class data attribute, we could use that.
+        // For now, if it has 'animate-on-scroll', we add the 'animate-fade-in-up' class.
+        if (entry.target.classList.contains('slide-right')) {
+            entry.target.classList.add('animate-slide-in-right');
+        } else {
+            entry.target.classList.add('animate-fade-in-up');
+        }
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Dynamic FAQ Schema (JSON-LD) Generator for AEO
+  const faqItems = document.querySelectorAll('.faq-item');
+  if (faqItems.length > 0) {
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": Array.from(faqItems).map(item => {
+        const questionText = item.querySelector('.faq-question').textContent.replace('+', '').trim();
+        const answerText = item.querySelector('.faq-answer').textContent.trim();
+        return {
+          "@type": "Question",
+          "name": questionText,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": answerText
+          }
+        };
+      })
+    };
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify(schema);
+    document.head.appendChild(script);
+  }
+
 });

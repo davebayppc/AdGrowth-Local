@@ -156,7 +156,11 @@ p {
 .btn-primary:hover {
   background-color: #e66a00;
   color: var(--color-text-white);
-  box-shadow: var(--box-shadow-hover);
+  box-shadow: 0 0 15px rgba(255, 122, 0, 0.6);
+}
+
+.btn-primary:active {
+  transform: scale(0.96);
 }
 
 .btn-secondary {
@@ -168,6 +172,11 @@ p {
 .btn-secondary:hover {
   background-color: var(--color-accent);
   color: var(--color-text-white);
+  box-shadow: 0 0 15px rgba(255, 122, 0, 0.4);
+}
+
+.btn-secondary:active {
+  transform: scale(0.96);
 }
 
 .btn-large {
@@ -540,3 +549,77 @@ footer {
   color: var(--color-text-white);
   margin-bottom: 1rem;
 }
+
+/* --- 2026 MODERN UPGRADES --- */
+
+/* Bento Grid */
+.bento-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+}
+
+.bento-item {
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--color-bg-white);
+  box-shadow: var(--box-shadow);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.bento-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.bento-large {
+  grid-column: span 12;
+}
+
+@media (min-width: 768px) {
+  .bento-large { grid-column: span 8; }
+  .bento-medium { grid-column: span 4; }
+  .bento-half { grid-column: span 6; }
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+/* Kinetic Typography */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Stagger delays for multiple animated elements */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
