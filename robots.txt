@@ -1,8 +1,4 @@
-User-agent: Googlebot
-Disallow: /
-
-User-agent: AdsBot-Google
+User-agent: *
 Allow: /
 
-User-agent: *
-Disallow: /
+Sitemap: https://adgrowthlocal.com/sitemap.xml
