@@ -58,6 +58,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, observerOptions);
 
+  const animatedElements = document.querySelectorAll('.animate-on-scroll');
+  animatedElements.forEach(el => observer.observe(el));
+
   // Dynamic FAQ Schema (JSON-LD) Generator for AEO
   const faqItems = document.querySelectorAll('.faq-item');
   if (faqItems.length > 0) {
