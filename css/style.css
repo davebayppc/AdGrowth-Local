@@ -1,4 +1,4 @@
-﻿/* --- GLOBALS & VARIABLES --- */
+/* --- GLOBALS & VARIABLES --- */
 :root {
   /* Branding Colors */
   --color-primary: #0A2540;   /* Deep Blue -> trust, professionalism */
@@ -40,6 +40,7 @@ body {
   color: var(--color-text-main);
   background-color: var(--color-bg-light);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 img {
@@ -533,6 +534,10 @@ footer {
 
   body {
     padding-bottom: 80px; /* space for sticky cta */
+  }
+
+  .whatsapp-widget {
+    bottom: 90px;
   }
 }
 
