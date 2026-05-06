@@ -5,7 +5,15 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>https://adgrowthlocal.com/es/</loc>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>https://adgrowthlocal.com/about/</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://adgrowthlocal.com/es/about/</loc>
         <priority>0.8</priority>
     </url>
     <url>
@@ -13,7 +21,15 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://adgrowthlocal.com/es/contact/</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://adgrowthlocal.com/free-strategy/</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://adgrowthlocal.com/es/free-strategy/</loc>
         <priority>0.8</priority>
     </url>
     <url>
@@ -21,7 +37,15 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://adgrowthlocal.com/es/privacy-policy/</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://adgrowthlocal.com/services/</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://adgrowthlocal.com/es/services/</loc>
         <priority>0.8</priority>
     </url>
     <url>
@@ -29,7 +53,15 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://adgrowthlocal.com/es/services/google-ads/</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://adgrowthlocal.com/services/local-service-ads/</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://adgrowthlocal.com/es/services/local-service-ads/</loc>
         <priority>0.8</priority>
     </url>
     <url>
@@ -37,7 +69,15 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://adgrowthlocal.com/es/services/microsoft-ads/</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://adgrowthlocal.com/services/meta-ads/</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://adgrowthlocal.com/es/services/meta-ads/</loc>
         <priority>0.8</priority>
     </url>
     <url>
@@ -45,7 +85,15 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://adgrowthlocal.com/es/services/conversion-tracking/</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://adgrowthlocal.com/services/landing-pages/</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://adgrowthlocal.com/es/services/landing-pages/</loc>
         <priority>0.8</priority>
     </url>
 </urlset>
