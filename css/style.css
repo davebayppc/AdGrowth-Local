@@ -570,6 +570,7 @@ footer {
 }
 
 .bento-item {
+  grid-column: span 12;
   border-radius: 16px;
   padding: 2rem;
   display: flex;
@@ -663,4 +664,10 @@ footer {
   width: 35px;
   height: 35px;
   fill: currentColor;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-widget {
+    bottom: 90px;
+  }
 }
