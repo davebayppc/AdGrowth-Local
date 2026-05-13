@@ -93,6 +93,7 @@
                 <form action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="access_key" value="d0432078-9e6d-4706-a51d-2b805e7baef2">
                     <input type="hidden" name="redirect" value="https://adgrowthlocal.com/es/thank-you/">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                     <h2>Consulta Gratuita</h2>
                     <p style="margin-bottom: 1.5rem; color:var(--color-text-light);">Generalmente respondemos en menos de 1 hora durante días hábiles.</p>
                     
@@ -121,6 +122,7 @@
                         <textarea id="message" name="message" class="form-control" rows="4" placeholder="Cuéntenos sobre sus desafíos de marketing actuales..."></textarea>
                     </div>
 
+                    <div class="h-captcha" data-captcha="true"></div>
                     <button type="submit" class="btn btn-primary" style="width:100%; font-size:1.1rem;">Solicite Consulta</button>
 
                 </form>
@@ -177,6 +179,7 @@
 
     <script src="/js/main.js"></script>
     <script>document.getElementById('year-contact').textContent = new Date().getFullYear();</script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>
 
